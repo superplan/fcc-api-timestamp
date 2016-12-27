@@ -2,6 +2,7 @@
 var express = require('express');
 var morgan = require("morgan");
 var chrono = require("chrono-node");
+var path = require("path");
 
 // Invoke App
 var app = express();
@@ -13,6 +14,13 @@ app.use(morgan('dev'));
 var myPort = process.env.PORT;
 // var myHost = process.env.IP;
 
+
+//Middleware: homepage
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/home.html'));
+});
+
+//Middleware: service
 app.get('/:input', function (req, res) {
   
   //Initialize variables
