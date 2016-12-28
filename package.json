@@ -14,13 +14,11 @@
   "author": "Kamfor",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
-  },
-  "devDependencies": {
+    "express": "^4.14.0",
     "chrono-node": "^1.2.5",
     "morgan": "^1.7.0",
     "path": "^0.12.7"
-  },
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/superplan/fcc-api-timestamp.git"
